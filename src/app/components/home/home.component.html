@@ -1,0 +1,13 @@
+<!-- [] para decirle que será un propiedad manejada por angular -->
+
+<!-- <div class="card-columns">
+  <div class="card" *ngFor="let rolas of guardaCanciones">
+    <img [src]="rolas.images| noimage" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{rolas.name}}</h5>
+      <span class="badge badge-primary" *ngFor="let artista of rolas.artists">{{artista.name}}</span>
+    </div>
+  </div>
+</div> -->
+<app-loading *ngIf="loading"></app-loading>
+<app-tajetas [items]="guardaCanciones"></app-tajetas>
